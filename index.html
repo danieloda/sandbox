@@ -6,33 +6,19 @@
   <title>Daniel Ashton Oda — Portfólio</title>
   <meta name="description" content="Portfólio de Daniel Ashton Oda — Senior Data Engineer. Databricks, Spark, Kafka, Airflow, AWS, Azure, Data Lakehouse." />
   <style>
-    :root{
-      --bg:#0e1116; --card:#161b22; --ink:#e6edf3; --muted:#9aa6b2;
-      --brand:#2f81f7; --accent:#22c55e; --border:#2a2f3a; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px;
-    }
+    :root{ --bg:#0e1116; --card:#161b22; --ink:#e6edf3; --muted:#9aa6b2; --brand:#2f81f7; --accent:#22c55e; --border:#2a2f3a; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px; }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;line-height:1.55}
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1040px;margin:auto;padding:28px}
-
-    /* Cabeçalho */
     header{display:grid;gap:18px;grid-template-columns:1fr;align-items:center;margin:10px 0 24px}
     @media(min-width:860px){header{grid-template-columns:120px 1fr}}
-    .avatar{
-      width:100px;
-      height:100px;
-      border-radius:50%;
-      object-fit:cover;
-      box-shadow:var(--shadow);
-    }
+    .avatar{width:100px;height:100px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow)}
     .hero h1{margin:0 0 6px;font-size:clamp(26px,4vw,40px);letter-spacing:.2px}
     .hero p{margin:0;color:var(--muted)}
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .badge{background:rgba(47,129,247,.12);border:1px solid rgba(47,129,247,.35);color:#cde0ff;
-      padding:6px 10px;border-radius:999px;font-size:13px}
-
-    /* Seções e grades */
+    .badge{background:rgba(47,129,247,.12);border:1px solid rgba(47,129,247,.35);color:#cde0ff;padding:6px 10px;border-radius:999px;font-size:13px}
     nav{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0}
     nav a{border:1px solid var(--border);padding:6px 10px;border-radius:999px;background:#0b1220}
     section{margin:26px 0}
@@ -40,44 +26,23 @@
     .grid{display:grid;gap:16px}
     @media(min-width:860px){.grid.cols-2{grid-template-columns:1fr 1fr}}
     @media(min-width:1100px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-    /* Cartões */
     .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
     .card h3{margin:0 0 8px;font-size:18px}
     .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px;margin-bottom:6px}
-
-    /* Tags */
     .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .tag{background:#0b1220;border:1px solid var(--border);padding:6px 10px;border-radius:999px;
-      font-size:12.5px;color:#cbd5e1}
+    .tag{background:#0b1220;border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:12.5px;color:#cbd5e1}
     .tag.green{border-color:#26442f;background:#13261a;color:#9be7b0}
-
-    /* Tabela */
     table{width:100%;border-collapse:collapse;border:1px solid var(--border);overflow:hidden;border-radius:12px}
     th,td{padding:12px 14px;border-bottom:1px solid var(--border)}
     th{background:#0f1420;text-align:left;color:#b9c4cf}
     tr:last-child td{border-bottom:none}
-
-    /* Rodapé */
     footer{margin-top:36px;padding:18px;color:var(--muted);border-top:1px solid var(--border)}
-
-    /* Pills (links utilitários) */
     .pill-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
-      padding:8px 12px;border-radius:999px;background:#0b1220}
-
-    /* Campo filtro */
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:8px 12px;border-radius:999px;background:#0b1220}
     .filter{margin:10px 0 0}
-    .filter input{width:100%;max-width:420px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:#0b1220;color:var(--ink)}
-
-    /* Acessibilidade */
+    .filter input{width:100%;max-width:420px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:#0b1220;color:#e6edf3}
     :focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
-
-    /* Tema claro */
-    html.light{
-      --bg:#f7f9fc; --card:#ffffff; --ink:#0f172a; --muted:#475569;
-      --brand:#0b5fff; --accent:#16a34a; --border:#e2e8f0; --shadow:0 10px 30px rgba(2,6,23,.08);
-    }
+    html.light{ --bg:#f7f9fc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0b5fff; --accent:#16a34a; --border:#e2e8f0; --shadow:0 10px 30px rgba(2,6,23,.08); }
   </style>
 </head>
 <body>
@@ -87,20 +52,19 @@
       <div class="hero">
         <h1>Daniel Ashton Oda</h1>
         <p>Senior Data Engineer — Databricks • Spark • Kafka • Airflow • AWS • Azure</p>
-
         <div class="badges">
           <span class="badge">6+ anos de experiência</span>
           <span class="badge">Experiência internacional (NA, EU, LATAM)</span>
           <span class="badge">Databricks DE Professional & Associate</span>
         </div>
-
         <div class="pill-links" aria-label="Contatos e perfis">
           <span class="pill">📍 Brasília, DF, Brasil</span>
           <a class="pill" href="mailto:daniel.ashton.oda@gmail.com">✉️ daniel.ashton.oda@gmail.com</a>
           <a class="pill" href="tel:+5561982305655">📞 +55 61 98230-5655</a>
+          <a class="pill" href="#" target="_blank" rel="noopener">in /LinkedIn</a>
+          <a class="pill" href="#" target="_blank" rel="noopener">🐙 GitHub</a>
           <a class="pill" id="theme-toggle" href="#">🌓 Tema</a>
         </div>
-
         <nav aria-label="Navegação rápida">
           <a href="#sobre">Sobre</a>
           <a href="#skills">Skills</a>
@@ -109,9 +73,8 @@
           <a href="#educacao">Educação</a>
           <a href="#contato">Contato</a>
         </nav>
-
         <div class="filter">
-          <input id="filter" type="search" placeholder="Filtrar projetos..." aria-label="Filtrar projetos" />
+          <input id="filter" type="search" placeholder="Filtrar projetos por nome, tecnologia ou descrição..." aria-label="Filtrar projetos" />
         </div>
       </div>
     </header>
@@ -119,7 +82,7 @@
     <!-- SOBRE -->
     <section id="sobre" class="card">
       <h2>Sobre</h2>
-      <p>Data Engineer com foco em soluções <em>cloud</em> escaláveis, automação de pipelines e governança.</p>
+      <p>Data Engineer com 6+ anos (2 internacionais) entregando soluções em nuvem escaláveis e de baixo custo na América do Norte, Europa e América Latina. Experiência com AWS, Azure, Databricks, Spark, Kafka, Airflow e modelagem de dados (Star Schema, Snowflake, Data Vault). Histórico em migrações, automação de ETL e otimização de custos. Aplicação de GenAI/LLMs para agilizar workflows e reporting. Certificado Databricks Data Engineer Professional e Associate. Também 4 anos em asset management, com foco em risco, otimização de portfólio e estratégia de investimentos.</p>
     </section>
 
     <!-- SKILLS -->
@@ -134,16 +97,29 @@
             <span class="tag">Spark</span>
             <span class="tag">Kafka</span>
             <span class="tag">Airflow</span>
-            <span class="tag">AWS</span>
-            <span class="tag">Azure</span>
+            <span class="tag">dbt</span>
+            <span class="tag">NiFi</span>
+            <span class="tag">AWS (S3, EMR, EKS, Redshift)</span>
+            <span class="tag">Azure (Blob, ADLS, Synapse, Event Hubs)</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Cassandra</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Metabase</span>
+            <span class="tag">Datadog</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">GitHub Actions</span>
           </div>
         </div>
         <div class="card">
           <h2>Certificações</h2>
           <ul style="margin:0;padding-left:18px">
-            <li>Databricks Certified Data Engineer Professional</li>
-            <li>Databricks Certified Data Engineer Associate</li>
+            <li>Databricks Certified Data Engineer <strong>Professional</strong> — <a href="#" target="_blank" rel="noopener">Credential</a></li>
+            <li>Databricks Certified Data Engineer <strong>Associate</strong> — <a href="#" target="_blank" rel="noopener">Credential</a></li>
           </ul>
+          <p style="color:var(--muted);margin:.6rem 0 0">(substitua os links “Credential” pelos URLs reais das credenciais)</p>
         </div>
       </div>
     </section>
@@ -154,11 +130,40 @@
       <div class="grid">
         <article class="card">
           <h3>Senior Data Engineer — Qubika <span class="meta">| Jan 2025 – Atual</span></h3>
-          <ul><li>Criação de pipelines escaláveis e governança de dados.</li></ul>
+          <ul style="margin:0;padding-left:18px">
+            <li>Desenvolvimento e manutenção de pipelines Databricks confiáveis, escaláveis e de baixo custo.</li>
+            <li>Provisionamento e automação de infraestrutura com Terraform (Unity Catalog, Delta Lakehouse, controles de acesso).</li>
+            <li>Governança compatível com SOX com trilhas de auditoria completas.</li>
+            <li>Execuções alinhadas a SLAs para relatórios e analytics críticos.</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Senior Data Engineer — Stefanini <span class="meta">| Mar 2024 – Jan 2025</span></h3>
-          <ul><li>Automação de análises de cyber offenses com LLMs no Databricks.</li></ul>
+          <h3>Senior Data Engineer — Stefanini North America & APAC <span class="meta">| Mar 2024 – Jan 2025</span></h3>
+          <ul style="margin:0;padding-left:18px">
+            <li>Automatização da análise de cyber offenses no Databricks com Python e LLMs, combinando dados de SIEM e APIs de reputação; redução de horas para segundos.</li>
+            <li>Arquitetura Delta Lake multi-tenant (NA & APAC) com integridade, escalabilidade e performance consistentes.</li>
+            <li>Otimização de performance Spark e manutenção de pipelines globais.</li>
+            <li>Apoio a ofertas de ITSM/Service Desk (Ticket PowerUp, eContact, SIAM).</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Data Engineer — Suno Research <span class="meta">| Set 2022 – Mar 2024</span></h3>
+          <ul style="margin:0;padding-left:18px">
+            <li>Gestão de dados de 100k+ assinantes e 600k usuários sociais para melhorar engajamento.</li>
+            <li>ETLs com PostgreSQL, Airflow, NiFi e PySpark integrando múltiplas fontes em Data Lake centralizado.</li>
+            <li>Definição de métricas de qualidade e monitoramento contínuo.</li>
+            <li>Self-service analytics para Marketing, CRM e Data Science.</li>
+            <li>Migração para AWS EMR serverless; implementação de Data Catalog.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Data Engineer & Data Analyst — VLG Asset Management <span class="meta">| Jan 2019 – Set 2022</span></h3>
+          <ul style="margin:0;padding-left:18px">
+            <li>Infraestrutura de dados do zero, apoiando crescimento a R$600M sob gestão.</li>
+            <li>Bancos de dados e Data Lake na AWS integrando corretoras, bancos centrais e trading.</li>
+            <li>Pipelines Airflow (S3, EC2) para ingestão, processamento e provisionamento.</li>
+            <li>Algoritmos de risco e liquidez automatizando ajustes de portfólio.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -167,39 +172,46 @@
     <section id="projetos">
       <h2>Projetos em Destaque</h2>
       <div class="grid cols-3">
-        <a class="card" href="#">
-          <h3>Cyber Offense Analysis</h3>
-          <p class="meta">Databricks • Python</p>
-          <p>Pipeline que reduz horas de análise para segundos.</p>
+        <a class="card" href="#" aria-label="Projeto Cyber Offense Analysis">
+          <h3>Cyber Offense Analysis com LLM</h3>
+          <p class="meta">Databricks • Python • APIs de reputação</p>
+          <p>Pipeline que reduz processamento de ~3h para segundos e gera relatórios enriquecidos para ITSM.</p>
+          <div class="tags"><span class="tag green">LLM</span><span class="tag">Automation</span><span class="tag">SIEM</span></div>
         </a>
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="Lakehouse Multi-Tenant">
           <h3>Lakehouse Multi-Tenant</h3>
-          <p class="meta">Delta Lake • Unity Catalog</p>
-          <p>Governança para múltiplas regiões globais.</p>
+          <p class="meta">Delta Lake • Unity Catalog • Terraform</p>
+          <p>Camadas e governança multi-região com performance consistente.</p>
+          <div class="tags"><span class="tag">Governança</span><span class="tag">Custos</span></div>
         </a>
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="Observabilidade e SLAs">
           <h3>Observabilidade & SLAs</h3>
           <p class="meta">Datadog • Grafana</p>
-          <p>Monitoramento e confiabilidade de pipelines.</p>
+          <p>Métricas e alarmes garantindo confiabilidade e entregas alinhadas a metas de negócio.</p>
+          <div class="tags"><span class="tag">SRE</span><span class="tag">Monitoramento</span></div>
         </a>
       </div>
     </section>
 
-    <!-- EDUCAÇÃO -->
+    <!-- EDUCAÇÃO & PUBLICAÇÕES -->
     <section id="educacao" class="grid cols-2">
       <div class="card">
         <h2>Educação</h2>
-        <table>
+        <table aria-label="Formação acadêmica">
           <thead><tr><th>Instituição</th><th>Curso</th><th>Período</th></tr></thead>
           <tbody>
-            <tr><td>UnB</td><td>Engenharia de Software</td><td>2019 – 2025</td></tr>
+            <tr><td>Universidade de Brasília</td><td>Bacharelado em Engenharia de Software</td><td>2019 – 2025</td></tr>
             <tr><td>Casa Thomas Jefferson</td><td>Inglês Avançado (C1)</td><td>2008 – 2013</td></tr>
           </tbody>
         </table>
       </div>
       <div class="card">
         <h2>Publicações</h2>
-        <ul><li>Análises estatísticas em saúde (2019 e 2020)</li></ul>
+        <ul style="margin:0;padding-left:18px">
+          <li>Contributor (análise estatística) — <em>Sexual behavior and STIs: an analysis of university students’ vulnerability in the Federal District</em>, 28º Congresso de Iniciação Científica, UnB (2019). <a href="#" target="_blank" rel="noopener">Link</a></li>
+          <li>Autor (análise estatística) — <em>Sexual behavior and STIs: an analysis of university students’ vulnerability in the Federal District</em>, 29º Congresso de Iniciação Científica, UnB (2020). <a href="#" target="_blank" rel="noopener">PDF (p.1549)</a> · <a href="#" target="_blank" rel="noopener">Conference Link</a></li>
+        </ul>
+        <p style="color:var(--muted);margin:.6rem 0 0">(substitua os links acima pelos URLs reais das publicações)</p>
       </div>
     </section>
 
@@ -208,53 +220,72 @@
       <h2>Contato</h2>
       <p>Email: <a href="mailto:daniel.ashton.oda@gmail.com">daniel.ashton.oda@gmail.com</a></p>
       <p>Telefone: <a href="tel:+5561982305655">+55 61 98230-5655</a></p>
+      <p>LinkedIn: <a href="#" target="_blank" rel="noopener">Adicionar URL</a></p>
+      <p>GitHub: <a href="#" target="_blank" rel="noopener">Adicionar URL</a></p>
     </section>
 
     <footer>
-      © <span id="year"></span> • Feito com ❤️ por Daniel Ashton Oda
+      © <span id="year"></span> • Feito por Daniel Ashton Oda
     </footer>
   </div>
 
   <script>
-    // Atualiza o ano do rodapé
-    document.getElementById('year').textContent = new Date().getFullYear();
+  // Ano do rodapé
+  (function () {
+    var el = document.getElementById('year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
 
-    // Scroll suave
-    document.addEventListener('click', (e) => {
-      const a = e.target.closest('a[href^="#"]');
+  // Scroll suave para âncoras internas
+  (function () {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#"]');
       if (!a) return;
-      const id = a.getAttribute('href');
-      const target = document.querySelector(id);
+      var id = a.getAttribute('href');
+      var target = document.querySelector(id);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.pushState(null, '', id);
       }
     });
+  })();
 
-    // Tema claro/escuro
-    const KEY = 'theme';
-    const btn = document.getElementById('theme-toggle');
-    if (localStorage.getItem(KEY) === 'light') document.documentElement.classList.add('light');
+  // Toggle de tema claro/escuro
+  (function () {
+    var KEY = 'theme';
+    var btn = document.getElementById('theme-toggle');
+    if (localStorage.getItem(KEY) === 'light') {
+      document.documentElement.classList.add('light');
+    }
     if (btn) {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', function (e) {
         e.preventDefault();
         document.documentElement.classList.toggle('light');
-        localStorage.setItem(KEY, document.documentElement.classList.contains('light') ? 'light' : 'dark');
+        localStorage.setItem(
+          KEY,
+          document.documentElement.classList.contains('light') ? 'light' : 'dark'
+        );
       });
     }
+  })();
 
-    // Filtro de projetos
-    const input = document.getElementById('filter');
-    const cards = Array.from(document.querySelectorAll('#projetos .card'));
-    if (input) {
-      input.addEventListener('input', () => {
-        const q = input.value.trim().toLowerCase();
-        cards.forEach(c => {
-          const text = c.textContent.toLowerCase();
-          c.style.display = text.includes(q) ? '' : 'none';
-        });
+  // Filtro simples de projetos
+  (function () {
+    var input = document.getElementById('filter');
+    var cards = Array.prototype.slice.call(
+      document.querySelectorAll('#projetos .card')
+    );
+    if (!input || !cards.length) return;
+
+    input.addEventListener('input', function () {
+      var q = input.value.trim().toLowerCase();
+      cards.forEach(function (c) {
+        var text = c.textContent.toLowerCase();
+        c.style.display = text.indexOf(q) !== -1 ? '' : 'none';
       });
-    }
+    });
+  })();
   </script>
 </body>
 </html>
