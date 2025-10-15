@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>B3 Ibovespa Helper</title>
+  <link rel="stylesheet" href="popup.css" />
+  <style>
+    /* Chrome popup hard limit is ~800x600 — keep us within that */
+    body { min-width: 720px; max-width: 780px; }
+
+    #chart-wrap {
+      display: grid;
+      grid-template-columns: 520px 1fr; /* bigger chart column */
+      gap: 14px;
+      align-items: start;
+      margin-top: 8px;
+    }
+
+    /* Bigger canvas area for the pie chart */
+    #ibovChart {
+      width: 480px;   /* CSS size used by Chart.js */
+      height: 480px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Custom HTML legend (scrollable) */
+    #html-legend {
+      max-height: 480px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+    #html-legend ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #html-legend li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      user-select: none;
+      font-size: 13px;
+    }
+    #html-legend li:hover { background: rgba(0,0,0,0.06); }
+    .legend-swatch {
+      width: 18px;
+      height: 10px;
+      border-radius: 2px;
+      flex: 0 0 18px;
+    }
+
+    #chart-fallback { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>B3 Ibovespa</h1>
+
+  <button id="show-chart" type="button">Show Pie Chart</button>
+
+  <div id="chart-wrap">
+    <div>
+      <canvas
+        id="ibovChart"
+        width="480"   <!-- intrinsic bitmap size -->
+        height="480"
+        role="img"
+        aria-label="Ibovespa composition pie chart"
+      ></canvas>
+      <div id="chart-fallback"></div>
+    </div>
+
+    <!-- Custom HTML legend -->
+    <div id="html-legend" aria-label="Legend"></div>
+  </div>
+
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
