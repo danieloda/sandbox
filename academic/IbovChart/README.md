@@ -1,4 +1,4 @@
-# 📊 Bootcamp Helper — B3 Ibovespa Extension
+# 📊 IbovChart Extension
 
 Extensão para Google Chrome (Manifest V3) que acessa a página da **B3** e extrai a composição do índice **Ibovespa**, exibindo os dados em um **gráfico de pizza interativo** (Chart.js).
 
