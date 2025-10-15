@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "B3 Ibovespa Helper",
+  "version": "1.0.0",
+  "description": "Chrome extension that extracts Ibovespa index composition from B3 and shows it in a pie chart.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "B3 Ibovespa Helper",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm*",
+        "https://sistemaswebb3-listados.b3.com.br/*"
+      ],
+      "js": ["src/content/content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "options_page": "src/options/options.html"
+}

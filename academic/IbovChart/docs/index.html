@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>B3 Ibovespa Extension — Bootcamp Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/styles/global.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      color: #003366;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .screenshot {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 600px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      background: #003366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .btn:hover {
+      background: #0055aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ibovespa B3 — Chrome Extension</h1>
+    <p>Projeto do Bootcamp II — Extensão Manifest V3</p>
+  </header>
+
+  <section>
+    <h2>📌 Sobre</h2>
+    <p>
+      Esta extensão acessa a <strong>página oficial da B3</strong> de composição do Ibovespa e
+      gera automaticamente um <strong>gráfico de pizza</strong> com a participação (%) das ações.
+    </p>
+  </section>
+
+  <section>
+    <h2>🖼️ Screenshots</h2>
+
+    <div class="screenshot">
+      <p><em>Gráfico gerado a partir da tabela da B3:</em></p>
+      <img src="img/piechart.png" alt="Pie chart Ibovespa" />
+    </div>
+
+    <div class="screenshot">
+      <p><em>Título e data exibidos na página da B3:</em></p>
+      <img src="img/date_example.png" alt="Date example" />
+    </div>
+
+    <div class="screenshot">
+      <p><em>Índice Bovespa — cabeçalho na página:</em></p>
+      <img src="img/ibovespa.png" alt="Header example" />
+    </div>
+  </section>
+
+  <section>
+    <h2>⚙️ Instalação manual</h2>
+    <ol>
+      <li>Baixe a versão mais recente no link abaixo.</li>
+      <li>Acesse <code>chrome://extensions</code> no navegador.</li>
+      <li>Ative o <strong>Developer Mode</strong>.</li>
+      <li>Clique em <em>Load unpacked</em> e selecione a pasta do projeto.</li>
+    </ol>
+    <p>
+      👉 <a class="btn" href="https://github.com/danieloda/bootcamp2-entrega-inicial-danieloda/releases" target="_blank">
+        Download (.zip Release)
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>📖 Repositório</h2>
+    <p>
+      Código-fonte disponível no GitHub:
+      <a href="https://github.com/danieloda/bootcamp2-entrega-inicial-danieloda" target="_blank">
+        bootcamp2-entrega-inicial-danieloda
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Licença MIT — Bootcamp II</p>
+  </footer>
+</body>
+</html>
+ 
